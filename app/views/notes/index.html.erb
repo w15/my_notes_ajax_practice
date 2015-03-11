@@ -7,6 +7,11 @@
 <input type="submit" value="Add Note">
 </form>
 
+<%= form_for Note.new do |f| %>
+  <%= f.text_field :content, :placeholder => "Add a new note" %>
+  <%= f.submit %>
+<% end %>
+
 <table>
   <thead>
     <tr>
