@@ -25,4 +25,10 @@ Ajaxify the Edit action. When the edit link is clicked, swap out the content of 
 
 Ajaxify the Update action. When the submit button on the edit form is clicked, swap out the form with the updated note. (Hint: There are many different ways to manipulate the DOM using jQuery. Check out the docs.)
 
+# General Ajaxification Tips
+
+ 1. Add the `:remote => true` option to whichever `link_to` or `form_for` you want to Ajaxify.
+ 2. Add support for JS (`format.js`) to the `respond_to` block of the action you want to Ajaxify.
+ 3. Write a `.js.erb` view template with jQuery inside that will update the user's HTML appropriately.
+
 
