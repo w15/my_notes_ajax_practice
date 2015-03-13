@@ -1,0 +1,6 @@
+<li id="note_<%= note.id %>" class="list-group-item">
+  <%= link_to 'Show', note, :class => "btn btn-default btn-sm" %>
+  <%= link_to 'Edit', edit_note_path(note), :class => "btn btn-default btn-sm" %>
+  <%= link_to 'Destroy', note, :remote => true, method: :delete, :class => "btn btn-default btn-sm" %>
+  <%= note.content %>
+</li>

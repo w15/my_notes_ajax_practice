@@ -1,0 +1,8 @@
+<%= form_for(note, :remote => true) do |f| %>
+<div class="input-group">
+  <%= f.text_field :content, :placeholder => "Enter content", :class => "form-control" %>
+  <span class="input-group-btn">
+    <%= f.submit :class => "btn btn-default" %>
+  </span>
+</div>
+<% end %>

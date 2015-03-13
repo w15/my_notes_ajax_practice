@@ -1,0 +1,14 @@
+// Build the new item
+var new_note_item = $('<%= escape_javascript(render 'note', :note => @note) %>');
+
+// Start it off with display: none
+new_note_item.hide();
+
+// Insert it at the right spot (while still hidden)
+$('#new_note_form_list_item').after(new_note_item);
+
+// Animate it in to view
+new_note_item.slideDown();
+
+// Clear out contents of input
+$('#note_content').val('');
